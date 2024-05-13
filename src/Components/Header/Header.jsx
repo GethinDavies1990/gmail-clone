@@ -2,6 +2,8 @@ import React from "react";
 import "./Header.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 function Header() {
   return (
@@ -15,7 +17,11 @@ function Header() {
           alt='gmail-logo'
         ></img>
       </div>
-      <div className='header__middle'></div>
+      <div className='header__middle'>
+        <SearchIcon />
+        <input type='text' placeholder='Search mail' />
+        <ArrowDropDownIcon className='header__inputCaret' />
+      </div>
       <div className='header__right'></div>
     </div>
   );
