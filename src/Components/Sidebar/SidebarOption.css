@@ -6,19 +6,21 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;
-  color: #818181;
+  color: white;
 }
 
 .sidebarOption:hover,
 .sidebarOption:hover > p,
 .sidebarOption:hover > h3 {
-  background-color: #fcecec;
-  color: #c04b37;
+  background-color: #5fbcff;
+  color: #1098f7;
   font-weight: 800 !important;
 }
 
 .sidebarOption > .MuiSvgIcon-root {
   padding: 5px;
+  color: #1098f7;
+  background-color: #403f4c !important;
 }
 
 .sidebarOption > p {
