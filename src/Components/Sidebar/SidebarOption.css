@@ -11,8 +11,9 @@
 
 .sidebarOption:hover,
 .sidebarOption:hover > p,
-.sidebarOption:hover > h3 {
-  background-color: #5fbcff;
+.sidebarOption:hover > h3,
+.sidebarOption:hover > .MuiSvgIcon-root {
+  background-color: #5fbcff !important;
   color: #1098f7;
   font-weight: 800 !important;
 }
@@ -23,7 +24,7 @@
   background-color: #403f4c !important;
 }
 
-.sidebarOption > p {
+.sidebarOption .sidebarOption > p {
   display: none;
   font-weight: 300;
 }
