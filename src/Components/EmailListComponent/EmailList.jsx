@@ -34,11 +34,11 @@ function EmailList() {
       </div>
       <div className='emailList__sections'>
         <Section Icon={Inbox} title='Primary' color='#5fa8d3' selected />
-        <Section Icon={People} title='Social' color='blue' selected />
+        <Section Icon={People} title='Social' color='pink' selected />
         <Section
           Icon={LocalOffer}
           title='Promotions'
-          color='skyblue'
+          color='lightgreen'
           selected
         />
       </div>
