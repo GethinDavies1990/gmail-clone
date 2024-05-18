@@ -14,17 +14,25 @@
 .sidebarOption:hover > h3,
 .sidebarOption--active,
 .sidebarOption--active > p,
-.sidebarOption--active > h3,
-.sidebarOption:hover > .MuiSvgIcon-root {
-  background-color: #5fbcff;
-  color: #1098f7;
+.sidebarOption--active > h3 {
+  background-color: #5fa8d3;
+  color: white;
   font-weight: 800 !important;
 }
 
 .sidebarOption > .MuiSvgIcon-root {
   padding: 5px;
   color: #1098f7;
-  background-color: #403f4c !important;
+}
+
+.sidebarOption--active > .MuiSvgIcon-root {
+  background-color: #5fa8d3;
+  color: white;
+}
+
+.sidebarOption:hover > .MuiSvgIcon-root {
+  color: white;
+  background-color: #5fa8d3 !important;
 }
 
 .sidebarOption .sidebarOption > p {

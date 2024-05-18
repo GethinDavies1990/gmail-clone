@@ -5,6 +5,13 @@ import AddIcon from "@mui/icons-material/Add";
 import InboxIcon from "@mui/icons-material/Inbox";
 import SidebarOption from "./SidebarOption";
 import StarIcon from "@mui/icons-material/Star";
+import {
+  AccessTime,
+  ExpandMore,
+  LabelImportant,
+  NearMe,
+  Note,
+} from "@mui/icons-material";
 
 function Sidebar() {
   return (
@@ -22,6 +29,11 @@ function Sidebar() {
         selected='true'
       />
       <SidebarOption Icon={StarIcon} title='Starred' number={54} />
+      <SidebarOption Icon={AccessTime} title='Snoozed' number={54} />
+      <SidebarOption Icon={LabelImportant} title='Important' number={54} />
+      <SidebarOption Icon={NearMe} title='Sent' number={54} />
+      <SidebarOption Icon={Note} title='Drafts' number={54} />
+      <SidebarOption Icon={ExpandMore} title='More' number={54} />
     </div>
   );
 }
