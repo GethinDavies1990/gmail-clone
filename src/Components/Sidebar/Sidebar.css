@@ -8,3 +8,18 @@
   border-radius: 30px !important;
   box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
 }
+
+.sidebar__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__footerIcons > .MuiSvgIcon-root {
+  color: #1098f7;
+  margin-right: 10px;
+}
+
+.sidebar__footerIcons:hover > .MuiSvgIcon-root {
+  color: #5fa8d3;
+  cursor: pointer;
+}
