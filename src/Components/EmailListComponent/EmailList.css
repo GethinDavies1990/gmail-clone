@@ -8,8 +8,31 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #5fa8d3;
+  border-bottom: 1px solid gray;
   background-colour: white;
   z-index: 999;
   padding-right: 10px;
+}
+
+.emailList__settingsLeft > .MuiSvgIcon-root {
+  color: #1098f7;
+  padding: 10px 5px;
+}
+
+.emailList__settingsRight > .MuiSvgIcon-root {
+  color: #1098f7;
+  padding: 10px 5px;
+}
+
+.emailList__settingsLeft:hover > .MuiSvgIcon-root,
+.emailList__settingsRight:hover > .MuiSvgIcon-root {
+  color: #5fa8d3;
+}
+
+.emailList__sections {
+  position: sticky;
+  top: 0;
+  display: flex;
+  border-bottom: 1px solid whitesmoke;
+  z-index: 999;
 }
