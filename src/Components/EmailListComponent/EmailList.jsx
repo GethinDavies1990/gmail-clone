@@ -1,6 +1,7 @@
 import React from "react";
 import "./EmailList.css";
 import Section from "../MailComponent/Section";
+import EmailRow from "./EmailRow";
 import {
   ArrowDropDown,
   ChevronLeft,
@@ -41,6 +42,9 @@ function EmailList() {
           color='lightgreen'
           selected
         />
+      </div>
+      <div className='emailList__list'>
+        <EmailRow />
       </div>
     </div>
   );

@@ -17,12 +17,8 @@
 
 .sidebar__footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 20px;
-}
-
-.sidebar__footerIcons {
-  margin-right: 20px;
 }
 
 .sidebar__footerIcons > .MuiSvgIcon-root {
