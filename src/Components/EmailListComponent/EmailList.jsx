@@ -17,31 +17,18 @@ function EmailList() {
       <div className='emailList__settings'>
         <div className='emailList__settingsLeft'>
           <CheckBoxOutlineBlankIcon />
-          <div className='emailList__settingsIcon'>
-            <ArrowDropDown />
-          </div>
-          <div className='emailList__settingsIcon'>
-            <Redo />
-          </div>
-          <div className='emailList__settingsIcon'>
-            <More />
-          </div>
+          <ArrowDropDown />
+          <Redo />
+          <More />
         </div>
         <div className='emailList__settingsRight'>
-          <div className='emailList__settingsIcon'>
-            <ChevronLeft />
-          </div>
-          <div className='emailList__settingsIcon'>
-            <ChevronRight />
-          </div>
-          <div className='emailList__settingsIcon'>
-            <KeyboardHide />
-          </div>
-          <div className='emailList__settingsIcon'>
-            <Settings />
-          </div>
+          <ChevronLeft />
+          <ChevronRight />
+          <KeyboardHide />
+          <Settings />
         </div>
       </div>
+      <div className='emailList__sections'></div>
     </div>
   );
 }
