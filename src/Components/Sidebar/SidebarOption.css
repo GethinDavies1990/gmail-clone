@@ -12,8 +12,11 @@
 .sidebarOption:hover,
 .sidebarOption:hover > p,
 .sidebarOption:hover > h3,
+.sidebarOption--active,
+.sidebarOption--active > p,
+.sidebarOption--active > h3,
 .sidebarOption:hover > .MuiSvgIcon-root {
-  background-color: #5fbcff !important;
+  background-color: #5fbcff;
   color: #1098f7;
   font-weight: 800 !important;
 }
