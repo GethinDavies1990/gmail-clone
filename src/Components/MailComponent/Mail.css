@@ -1,0 +1,16 @@
+.mail__toolsLeft {
+  display: flex;
+}
+
+.mail__buttonWrapper {
+  padding: 10px;
+}
+
+.mail__buttonWrapper > .MuiSvgIcon-root {
+  color: #5fa8d3;
+  cursor: pointer;
+}
+
+.mail__buttonWrapper:hover > .MuiSvgIcon-root {
+  color: #1098f7;
+}

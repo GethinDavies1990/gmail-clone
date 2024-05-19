@@ -11,13 +11,16 @@ import {
   MoveToInbox,
   WatchLater,
 } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 function Mail() {
+  const navigate = useNavigate();
+
   return (
     <div className='mail'>
       <div className='mail__tools'>
         <div className='mail__toolsLeft'>
-          <div className='mail__buttonWrapper'>
+          <div onClick={() => navigate("/")} className='mail__buttonWrapper'>
             <ArrowBack />
           </div>
           <div className='mail__buttonWrapper'>
@@ -45,7 +48,7 @@ function Mail() {
             <MoreVert />
           </div>
         </div>
-        <div className='mail__tollsRight'></div>
+        <div className='mail__toolsRight'></div>
       </div>
       <h1>What up </h1>
     </div>
