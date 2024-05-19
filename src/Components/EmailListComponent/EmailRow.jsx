@@ -20,10 +20,10 @@ function EmailRow({ title, subject, description, time, id }) {
       <div className='emailRow__message'>
         <h4>
           {subject}
-          <span className='emailRow__description'>{description}</span>
+          {" - "} <span className='emailRow__description'>{description}</span>
         </h4>
       </div>
-      <div className='emailRow__description'>{time}</div>
+      <p className='emailRow__time'>{time}</p>
     </div>
   );
 }
