@@ -26,7 +26,8 @@
 }
 
 .header__middle > .MuiSvgIcon-root {
-  color: #5fbcff;
+  color: #1098f7;
+  background-color: #403f4e;
 }
 
 .header__middle > input {

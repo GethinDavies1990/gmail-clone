@@ -6,9 +6,12 @@ import {
   Delete,
   Email,
   Error,
+  ExitToApp,
   LabelImportant,
   MoreVert,
   MoveToInbox,
+  Print,
+  UnfoldMore,
   WatchLater,
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
@@ -48,9 +51,27 @@ function Mail() {
             <MoreVert />
           </div>
         </div>
-        <div className='mail__toolsRight'></div>
+        <div className='mail__toolsRight'>
+          <div className='mail__buttonWrapper'>
+            <UnfoldMore />
+          </div>
+          <div className='mail__buttonWrapper'>
+            <Print />
+          </div>
+          <div className='mail__buttonWrapper'>
+            <ExitToApp />
+          </div>
+        </div>
       </div>
-      <h1>What up </h1>
+      <div className='mail__body'>
+        <div className='mail__bodyHeader'>
+          <h2>Subject</h2>
+          <LabelImportant className='mail__important' />
+          <p>Title</p>
+          <p>10pm</p>
+        </div>
+        <div className='mail__message'>This is a message</div>
+      </div>
     </div>
   );
 }

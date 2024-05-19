@@ -1,4 +1,18 @@
+.mail {
+  flex: 1;
+  background-color: #403f4e;
+}
+
+.mail__tools {
+  display: flex;
+  justify-content: space-between;
+}
+
 .mail__toolsLeft {
+  display: flex;
+}
+
+.mail__toolsRight {
   display: flex;
 }
 
@@ -7,10 +21,18 @@
 }
 
 .mail__buttonWrapper > .MuiSvgIcon-root {
-  color: #5fa8d3;
+  color: #1098f7;
   cursor: pointer;
 }
 
 .mail__buttonWrapper:hover > .MuiSvgIcon-root {
-  color: #1098f7;
+  color: white;
+}
+
+.mail__body {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  background-color: #403f4e;
+  padding: 20px;
 }

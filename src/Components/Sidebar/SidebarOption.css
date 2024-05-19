@@ -15,7 +15,7 @@
 .sidebarOption--active,
 .sidebarOption--active > p,
 .sidebarOption--active > h3 {
-  background-color: #5fa8d3;
+  background-color: #1098f7;
   color: white;
   font-weight: 800 !important;
 }
@@ -26,13 +26,13 @@
 }
 
 .sidebarOption--active > .MuiSvgIcon-root {
-  background-color: #5fa8d3;
+  background-color: #1098f7;
   color: white;
 }
 
 .sidebarOption:hover > .MuiSvgIcon-root {
   color: white;
-  background-color: #5fa8d3 !important;
+  background-color: #1098f7 !important;
 }
 
 .sidebarOption .sidebarOption > p {
