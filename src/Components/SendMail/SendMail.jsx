@@ -3,6 +3,8 @@ import "./SendMail.css";
 import { Close } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import { useForm } from "react-hook-form";
+import { closeSendMessage } from "../../features/mailSlice";
+import { useDispatch } from "react-redux";
 
 function SendMail() {
   const {
@@ -14,21 +16,31 @@ function SendMail() {
   const onSubmit = (formData) => {
     console.log(formData);
   };
+  const dispatch = useDispatch();
 
   return (
     <div className='sendMail'>
       <div className='sendMail__header'>
         <h3>New Message</h3>
-        <Close className='sendMail__close' />
+        <Close
+          onClick={() => dispatch(closeSendMessage())}
+          className='sendMail__close'
+        />
       </div>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <input
           name='to'
-          type='text'
+          type='email'
           placeholder='To'
-          {...register("to", { required: true })}
+          {...register("to", {
+            required: "To is required",
+            pattern: {
+              value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+              message: "Please enter a valid email address",
+            },
+          })}
         />
-        {errors.to && <p className='sendMail__error'>To is Required</p>}
+        {errors.to && <p className='sendMail__error'>{errors.to.message}</p>}
 
         <input
           name='subject'
