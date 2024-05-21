@@ -61,3 +61,11 @@
 .sendMail__message {
   flex: 1;
 }
+
+.sendMail__error {
+  background-color: #403f4e;
+  color: #b03c3f;
+  text-align: right;
+  padding: 2px;
+  font-size: 12px;
+}
