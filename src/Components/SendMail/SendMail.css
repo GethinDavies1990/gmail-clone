@@ -2,4 +2,47 @@
   position: absolute;
   bottom: 0px;
   right: 50px;
+  background-color: #403f4e;
+  width: 40%;
+  height: 40%;
+  max-width: 500px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 24);
+}
+
+.sendMail__header {
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sendMail__header > h3 {
+  color: whitesmoke;
+  font-size: 13px;
+}
+
+.sendMail__send {
+  background-color: blue !important;
+  text-transform: capitilize !important;
+  margin: 15px !important;
+}
+
+.sendMail__close {
+  cursor: pointer;
+}
+
+.sendMail > form > input {
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
 }
