@@ -36,3 +36,16 @@
   border-bottom: 1px solid whitesmoke;
   z-index: 999;
 }
+
+.emailList {
+  padding-bottom: 20%;
+}
+
+.emailList::-webkit-scrollbar {
+  display: none;
+}
+
+.emailList {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
