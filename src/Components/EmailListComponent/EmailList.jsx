@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./EmailList.css";
 import Section from "../MailComponent/Section";
 import EmailRow from "./EmailRow";
@@ -15,8 +15,21 @@ import {
   Settings,
 } from "@mui/icons-material";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
+import { db } from "../../firebase";
 
 function EmailList() {
+  const [emails, setEmails] = useState([]);
+
+  useEffect(() => {
+    db.collection("emails")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setEmails(
+          snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
+        )
+      );
+  }, []);
+
   return (
     <div className='emailList'>
       <div className='emailList__settings'>
