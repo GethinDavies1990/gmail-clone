@@ -6,12 +6,20 @@ import {
   StarBorderOutlined,
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import { selectMail } from "../../features/mailSlice";
+import { useDispatch } from "react-redux";
 
 function EmailRow({ title, subject, description, time, id }) {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const openMail = () => {
+    dispatch(selectMail({ title, subject, description, time, id }));
+    navigate("/mail");
+  };
 
   return (
-    <div onClick={() => navigate("/mail")} className='emailRow'>
+    <div onClick={openMail} className='emailRow'>
       <div className='emailRow__options'>
         <CheckBoxOutlineBlank />
         <StarBorderOutlined />
