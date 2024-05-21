@@ -11,10 +11,13 @@ function SendMail() {
         <Close className='sendMail__close' />
       </div>
       <form>
-        <input type='text' />
-        <input type='text' />
-        <input type='text' />
-
+        <input type='text' placeholder='To' />
+        <input type='text' placeholder='Subject' />
+        <input
+          type='text'
+          placeholder='Message..'
+          className='sendMail__message'
+        />
         <div className='sendMail__options'>
           <Button
             className='sendMail__send'
