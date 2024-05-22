@@ -20,14 +20,16 @@
   display: flex;
   flex: 0.7;
   align-items: center;
-  background-color: #403f4e;
+  background-color: #222222;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 50px;
+  border: 1px solid #1098f7;
+  margin: 10px 5px;
 }
 
 .header__middle > .MuiSvgIcon-root {
   color: #1098f7;
-  background-color: #403f4e;
+  background-color: #222222;
 }
 
 .header__middle > input {
