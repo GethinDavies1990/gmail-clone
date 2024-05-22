@@ -14,10 +14,7 @@ function Header() {
         <IconButton>
           <MenuIcon />
         </IconButton>
-        <img
-          src='https://image.similarpng.com/very-thumbnail/2020/12/Gmail-logo-design-on-transparent-background-PNG.png'
-          alt='gmail-logo'
-        ></img>
+        <img src='public/whail.png' alt='gmail-logo'></img>
       </div>
       <div className='header__middle'>
         <SearchIcon />
