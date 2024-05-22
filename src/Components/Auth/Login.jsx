@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import { auth, provider } from "../../firebase";
 import { login } from "../../features/userSlice";
 import { useDispatch } from "react-redux";
+import whailLogo from "../../whail.png";
 
 function Login() {
   const dispatch = useDispatch();
@@ -24,10 +25,13 @@ function Login() {
   };
   return (
     <div className='login'>
-      Login
       <div className='login__container'>
-        <img src='' alt='' />
-        <Button onClick={signIn}>Login</Button>
+        <div className='login__card'>
+          <img src={whailLogo} alt='' className='whailLogo' />
+          <p className='login__button' onClick={signIn}>
+            Login
+          </p>
+        </div>
       </div>
     </div>
   );

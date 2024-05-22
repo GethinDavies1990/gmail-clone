@@ -6,6 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AppsIcon from "@mui/icons-material/Apps";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import whailLogo from "../../whail.png";
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
         <IconButton>
           <MenuIcon />
         </IconButton>
-        <img src='public/whail.png' alt='gmail-logo'></img>
+        <img src={whailLogo} alt='gmail-logo'></img>
       </div>
       <div className='header__middle'>
         <SearchIcon />

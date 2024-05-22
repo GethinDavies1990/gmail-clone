@@ -1,8 +1,9 @@
-/login {
+.login {
   display: grid;
   place-items: center;
-  background-color: yellow;
+  background-color: #222222;
   height: 100vh;
+  color: white;
 }
 
 .login__container {
@@ -10,7 +11,22 @@
   flex-direction: column;
 }
 
-.login__conatiner > img {
+.login__container > .login__card > img {
   object-fit: contain;
-  height: 200px;
+  height: 100px;
+}
+
+.login__card {
+  padding: 100px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.login__button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #1098f7;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
 }

@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import mailReducer from "../features/mailSlice";
-import { useReducer } from "react";
+import userReducer from "../features/userSlice"; // Correct import
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     mail: mailReducer,
-    user: useReducer,
+    user: userReducer, // Use the default export from userSlice
   },
 });
+
+export default store;
