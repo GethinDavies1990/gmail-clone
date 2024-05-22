@@ -75,14 +75,9 @@ function SendMail() {
         )}
 
         <div className='sendMail__options'>
-          <Button
-            className='sendMail__send'
-            variant='contained'
-            color='primary'
-            type='submit'
-          >
+          <button className='sendMail__send' type='submit'>
             Send
-          </Button>
+          </button>
         </div>
       </form>
     </div>
