@@ -23,13 +23,13 @@ function Sidebar() {
 
   return (
     <div className='sidebar'>
-      <Button
+      <p
         startIcon={<AddIcon fontSize='large' />}
         className='sidebar__compose'
         onClick={() => dispatch(openSendMessage())}
       >
         Compose
-      </Button>
+      </p>
       <SidebarOption
         Icon={InboxIcon}
         title='Inbox'
