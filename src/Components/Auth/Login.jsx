@@ -17,7 +17,7 @@ function Login() {
           login({
             displayName: user.displayName,
             email: user.email,
-            photoURL: user.photoURL,
+            photoUrl: user.photoURL,
           })
         );
       })

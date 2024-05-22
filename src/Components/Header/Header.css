@@ -48,4 +48,5 @@
 .header__rightAvatar {
   background-color: #222222 !important;
   color: #1098f7 !important;
+  cursor: pointer;
 }
